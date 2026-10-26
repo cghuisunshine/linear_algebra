@@ -182,7 +182,7 @@
     function selectLecture(index,focus=false){
       if(index<0||index>=lectures.length)return;
       removePlayer();current=index;const lecture=lectures[index];groups=makeGroups(lecture.cues);
-      const readingEdition={'1':'lecture-1-book.html','2':'lecture-2-book.html','3':'lecture-3-book.html','4':'lecture-4-book.html','5':'lecture-5-book.html','6':'lecture-6-book.html'}[lecture.id];
+      const readingEdition={'1':'lecture-1-book.html','2':'lecture-2-book.html','3':'lecture-3-book.html','4':'lecture-4-book.html','5':'lecture-5-book.html','6':'lecture-6-book.html','7':'lecture-7-book.html'}[lecture.id];
       $('book-edition-link').hidden=!readingEdition;
       if(readingEdition)$('book-edition-link').querySelector('a').href=readingEdition;
       $('lesson-number').textContent=label(lecture);$('lecture-title').textContent=shortTitle(lecture);
